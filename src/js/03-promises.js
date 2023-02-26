@@ -34,9 +34,9 @@ function createPromise(position, delay) {
     setTimeout(() => {
   const shouldResolve = Math.random() > 0.3;
   if (shouldResolve) {
-    resolve({ position, delay });
+    resolve({position, delay});
   } else {
-    reject({ position, delay });
+    reject({position, delay});
   }
   }, delay);
   });
